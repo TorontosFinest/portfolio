@@ -7,12 +7,17 @@ export default function Profile() {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <a href="https://www.linkedin.com/in/abdi-ali2022/" target="_blank">
-              <i className="fa fa-linkedin"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-github"></i>
-            </a>
+            <div className="colz-icon">
+              <a
+                href="https://www.linkedin.com/in/abdi-ali2022/"
+                target="_blank"
+              >
+                <i className="fa fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i className="fa fa-github"></i>
+              </a>
+            </div>
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
@@ -41,8 +46,27 @@ export default function Profile() {
                   ]}
                 />
               </h1>
+              <span className="profile-role-tagline">
+                Knack of building applications with front and back end
+                operations.
+              </span>
             </span>
           </div>
+          <div className="profile-options">
+            <button className="btn primary-btn">
+              {""}
+              Hire Me{" "}
+            </button>
+            <a
+              href="https://resume.creddle.io/resume/1ogk2dupqat"
+              target="_blank"
+            >
+              View Resume
+            </a>
+          </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
