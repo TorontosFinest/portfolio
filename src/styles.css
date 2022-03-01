@@ -1,6 +1,5 @@
 section {
   background-color: white;
-  border: solid black 1px;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -68,6 +67,11 @@ p {
   font-size: 30px;
 }
 
+.subtext {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .button:hover {
   background-color: rgb(245, 60, 60);
 }
@@ -96,10 +100,45 @@ p {
   padding: 80px;
 }
 
+.sub-section-alternative {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  text-align: center;
+}
+
 h2 {
   font-size: 70px;
 }
 
 .headshot {
   width: 400px;
+}
+
+.project-card {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+  box-shadow: 5px 5px 20px rgb(162, 161, 161);
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-image {
+  margin-top: 25px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: rgb(245, 60, 60);
 }
