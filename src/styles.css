@@ -13,8 +13,10 @@ body {
 
 footer {
   height: 500px;
-
+  color: white;
   background-color: black;
+  text-align: center;
+  padding: 80px;
 }
 
 nav {
@@ -29,6 +31,10 @@ ul {
   font-size: 30px;
 
   justify-content: space-around;
+}
+
+ul.show {
+  display: block;
 }
 li {
   /* width: 200px; */
@@ -112,7 +118,7 @@ h2 {
 }
 
 .headshot {
-  width: 400px;
+  width: 500px;
 }
 
 .project-card {
@@ -141,4 +147,52 @@ hr {
 .project-link {
   text-decoration: none;
   color: rgb(245, 60, 60);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    align-self: flex-end;
+    margin: 20px;
+  }
+
+  ul {
+    display: none;
+    background-color: #2b2c38;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    background-color: #2b2c38;
+  }
+
+  .logo {
+    display: none;
+  }
 }
