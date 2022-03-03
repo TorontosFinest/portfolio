@@ -11,7 +11,7 @@ body {
 footer {
   height: 750px;
   color: white;
-  background-color: black;
+  background-color: #1c1d25;
   text-align: center;
   padding: 80px;
 }
@@ -236,7 +236,7 @@ button[type="submit"] {
   padding: 20px;
   font-size: 20px;
   border-radius: 8px;
-  color: rgb(11, 32, 69);
+  color: black;
   background-color: grey;
   text-align: center;
   cursor: pointer;
@@ -260,11 +260,13 @@ button[type="submit"]:hover {
 
 #status.success {
   background-color: rgb(166, 235, 168);
+  color: black;
   animation: status 4s ease forwards;
 }
 
 #status.error {
   background-color: rgb(237, 150, 150);
+  color: black;
   animation: status 4s ease forwards;
 }
 

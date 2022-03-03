@@ -24,14 +24,19 @@ async function handleSubmit(event) {
     .then((response) => {
       if (response.ok) {
         formStatus.innerHTML = "Thanks for your submission!";
+        formStatus.classList.add("success");
         form.reset();
       } else {
+        formStatus.classList.add("error");
+
         response.json().then((data) => {
           if (Object.hasOwn(data, "errors")) {
             formStatus.innerHTML = data["errors"]
               .map((error) => error["message"])
               .join(", ");
           } else {
+            formStatus.classList.add("error");
+
             formStatus.innerHTML =
               "Oops! There was a problem submitting your form";
           }
@@ -39,6 +44,7 @@ async function handleSubmit(event) {
       }
     })
     .catch(() => {
+      formStatus.classList.add("error");
       formStatus.innerHTML = "Oops! There was a problem submitting your form";
     });
 }
