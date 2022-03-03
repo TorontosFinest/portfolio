@@ -248,3 +248,37 @@ button[type="submit"]:hover {
   color: white;
   box-shadow: 0px 0px 25px grey;
 }
+
+#status {
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-left: 492px;
+  border-radius: 8px;
+}
+
+#status.success {
+  background-color: rgb(166, 235, 168);
+  animation: status 4s ease forwards;
+}
+
+#status.error {
+  background-color: rgb(237, 150, 150);
+  animation: status 4s ease forwards;
+}
+
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: none;
+  }
+}
