@@ -54,9 +54,24 @@ li {
   background-color: coral;
   text-align: center;
   font-weight: 300;
+  float: left;
   font-size: 30px;
   padding-top: 5px;
   margin-top: 20px;
+}
+
+.button2 {
+  width: 205px;
+  height: 58px;
+  border-radius: 30px;
+  background-color: coral;
+  text-align: center;
+  font-weight: 300;
+  float: right;
+  font-size: 30px;
+  padding-top: 5px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 h1 {
@@ -79,9 +94,8 @@ p {
   background-color: rgb(245, 60, 60);
 }
 
-.button:active {
-  background-color: #a9a9a9;
-  color: #808080;
+.button2:hover {
+  background-color: rgb(245, 60, 60);
 }
 
 .socials {
